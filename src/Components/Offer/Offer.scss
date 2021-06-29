@@ -1,0 +1,50 @@
+@import "../../global.scss";
+
+.offer-container{
+    background-image: url(../Images/offer.png);
+    height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    .wrapper{
+        text-align: center;
+        padding-top: 13rem;
+        h1{
+            font-size: 60px;
+            color: #fff;
+
+            span{
+                color: red;
+            }
+            @include mobile{
+                font-size: 40px;
+              }
+        }
+        p{
+            margin: 2rem 0;
+            font-size: 18px;
+            color: rgb(199, 178, 178);
+
+            @include mobile{
+                margin: 1.5rem 0;
+                font-size: 16px;
+                letter-spacing: 1px;
+              }
+        }
+        .btn{
+            text-decoration: none;
+            color: #fff;
+            background-color: red;
+            padding: 0.8rem 2.6rem;
+            font-size: 18px;
+            border-radius: 8px;
+
+            &:hover{
+                background-color: transparent;
+                border: 1px solid red;
+            }
+            @include mobile{
+                padding: 0.5rem 1.5rem;
+              }
+        }
+    }
+}

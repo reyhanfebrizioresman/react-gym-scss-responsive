@@ -1,0 +1,86 @@
+@import "../../global.scss";
+
+
+.contact-container{
+    height: 100vh;
+    text-align: center;
+    margin-top: 4rem;
+
+    @include mobile{
+        margin-top: 6rem;
+      }
+    
+    h1{
+        color: #fff;
+        font-size: 48px;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+
+        @include mobile{
+            font-size: 38px;
+          }
+    }
+    .form-group{
+        margin: 0.5rem 0;
+
+      
+        
+       
+        input{
+            // padding: 1rem 12rem;
+            width: 550px;
+            height: 50px;
+            border-radius: 8px;
+            background-color: rgb(39, 38, 38);
+            outline: none;
+            border: none;
+            color: #fff;
+            padding: 0 1rem;
+            &::placeholder{
+                color: #fff;
+            }
+
+            @include mobile{
+                width: 450px;
+            }
+        }
+        textarea{
+            // padding: 8rem 12rem;
+            color: #fff;
+            height: 250px;
+            width: 550px;
+            background-color: rgb(39, 38, 38);
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 1rem;
+
+            &::placeholder{
+                color: #fff;
+            }
+
+            @include mobile{
+                width: 450px;
+            }
+        }
+        
+    }
+    .btn{
+        text-decoration: none;
+        color: #fff;
+        background-color: red;
+        padding: 0.4rem 15rem;
+        font-size: 18px;
+        border-radius: 8px;
+
+        &:hover{
+            background-color: transparent;
+            border: 1px solid red;
+        }
+
+        @include mobile{
+            padding: 0.4rem 12rem;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import "../../global.scss";
+
+.feature-container{
+    min-height: 100vh;
+
+    h1{
+        text-align: center;
+        color: #fff;
+        margin: 6rem 6rem;
+        font-size: 48px;
+    }
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+          }
+    }
+}

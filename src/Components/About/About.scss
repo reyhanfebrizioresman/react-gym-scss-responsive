@@ -1,0 +1,73 @@
+@import "../../global.scss";
+
+.about-container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+      }
+
+    .left{
+
+        img{
+            height: 500px;
+            width: 600px;
+            object-fit: cover;
+
+            @include mobile{
+                height: 400px;
+                width: 450px;
+              }
+        }
+    }
+
+    .right{
+         max-width: 550px;
+         
+         @include mobile{
+            max-width: 450px;
+            text-align: center;
+          }
+
+        h1{
+            color: red;
+            font-size: 48px;
+
+            @include mobile{
+                font-size: 38px;
+              }
+        }
+        p{
+            margin: 2rem 0;
+            color: rgb(168, 165, 165);
+            max-width: 400px;
+            font-size: 19px;
+
+            @include mobile{
+                font-size: 16px;
+                max-width: 450px;
+              }
+        }
+        .btn{
+            text-decoration: none;
+            color: #fff;
+            background-color: red;
+            padding: 0.8rem 2rem;
+            font-size: 14px;
+            border-radius: 8px;
+
+            &:hover{
+                background-color: transparent;
+                border: 1px solid red;
+            }
+            @include mobile{
+                padding: 0.5rem 2rem;
+              }
+        }
+    }
+}

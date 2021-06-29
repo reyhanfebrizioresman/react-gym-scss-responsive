@@ -1,0 +1,124 @@
+@import '../../global.scss';
+
+.navbar{
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	width:100%;
+	z-index: 1;
+    background-color: transparent;
+    transition: 0.6s ease-in-out;
+
+    &.active {
+        color: white;
+    
+        .hamburger {
+          span {
+            &:first-child {
+              background-color: white;
+              transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            &:last-child {
+              background-color: white;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+      }
+
+
+
+    &:hover{
+        box-shadow: 2px 2px 12px rgba(184, 0, 0, 0.445);
+	    background-color: #000000;
+    }
+
+    @media(max-width: 1100px){
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+  
+        .logo{
+            img{
+                height: 55px;
+                width: 85px;
+            }
+        }
+
+        .hamburger{
+            display: none;
+            @media(max-width: 1100px){
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                
+            }
+    
+            span{
+                
+                @media(max-width: 1100px){
+                    width: 100%;
+                    height: 3px;
+                    background-color: white;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
+
+    
+
+    
+
+    .menu{
+        color: #fff;
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        @media(max-width: 1100px){
+            width: 300px;
+            height: 100vh;
+            background-color: black;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            transition: all 1s ease;
+
+            &.active{
+                right: 0;
+            }
+        }
+        li{
+            display: flex;
+            margin: 0 0.8rem;
+            text-transform: uppercase;
+	        font-weight: 700;
+            font-size: 13px;
+            letter-spacing: 1px;
+            padding: 0.8rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            
+
+            &:hover{
+                background-color: #FF1414;
+                
+            }
+        }
+
+    }
+}
+

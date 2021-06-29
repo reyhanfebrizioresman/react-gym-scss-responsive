@@ -1,0 +1,36 @@
+.box{
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    transition: 0.4s ease-in-out;
+    margin-left: 2rem;
+    border-radius: 10px;
+    &:hover{
+       border: 1px solid #FF1414;
+       box-shadow: 2px 2px 12px rgba(184, 0, 0, 0.445);
+    }
+    .img-box{
+        width: 100%;
+        height: 60%;;
+        img{
+            padding: 15px;
+            margin-top: 40px;
+            width:100%;
+            height: 50%;
+        }
+        // &:hover{
+        //     transform: scale(1.05);
+        // }
+    }
+    .title{
+        color: #fff;
+        h2{
+            margin-bottom: 2rem;
+        }
+
+        p{
+            color: rgb(175, 168, 168);
+            font-size: 18px;
+        }
+    }
+}
